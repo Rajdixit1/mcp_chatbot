@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>AI Chatbot=>Sunil</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-header">
+                <div class="logo">
+                    AI
+                </div>
+
+                <div class="brand">
+                    AI Chatbot
+                </div>
+            </div>
+
+            <button
+                id="newChat"
+                class="new-chat"
+            >
+                + New chat
+            </button>
+
+            <div class="history-title">
+                Recent chats
+            </div>
+
+            <div
+                id="history"
+                class="history"
+            ></div>
+
+            <div class="sidebar-bottom">
+
+                <button id="clearChat">
+                    Clear conversation
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Main -->
+
+        <main class="main">
+
+            <header class="topbar">
+
+                <button
+                    id="menuButton"
+                    class="menu-button"
+                >
+                    ☰
+                </button>
+
+                <div class="model-name">
+                    AI Chatbot
+                </div>
+
+                <div class="status">
+                    <span class="status-dot"></span>
+                    Online
+                </div>
+
+            </header>
+
+
+            <!-- Messages -->
+
+            <section
+                id="messages"
+                class="messages"
+            >
+
+                <div
+                    id="welcome"
+                    class="welcome"
+                >
+
+                    <div class="welcome-logo">
+                        AI
+                    </div>
+
+                    <h1>
+                        How can I help you?
+                    </h1>
+
+                    <p>
+                        Ask me anything.
+                    </p>
+
+                    <div class="suggestions">
+
+                        <button data-message="Explain MCP in simple words">
+                            Explain MCP
+                        </button>
+
+                        <button data-message="What is FastAPI?">
+                            What is FastAPI?
+                        </button>
+
+                        <button data-message="Give me a Python example">
+                            Python example
+                        </button>
+
+                        <button data-message="What is 2 + 2?">
+                            Calculate
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Input -->
+
+            <div class="input-area">
+
+                <form id="chatForm">
+
+                    <textarea
+                        id="messageInput"
+                        placeholder="Message AI..."
+                        rows="1"
+                    ></textarea>
+
+                    <button
+                        id="sendButton"
+                        type="submit"
+                    >
+                        ➤
+                    </button>
+
+                </form>
+
+                <div class="disclaimer">
+                    AI can make mistakes. Check important information.
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="/static/app.js"></script>
+
+</body>
+
+</html>
