@@ -2,7 +2,7 @@ from mcp import ClientSession
 from mcp.client.streamable_http import streamable_http_client
 
 
-MCP_URL = "http://127.0.0.1:8001/mcp"
+MCP_URL = "https://mcp-chatbot-1-t4rr.onrender.com/mcp"
 
 
 async def get_mcp_instruction() -> str:
